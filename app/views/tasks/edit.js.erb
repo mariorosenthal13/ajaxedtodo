@@ -1,0 +1,8 @@
+var html = "<%= j render 'form', task: @task %>"
+// changes the title
+$('.modal-title').text("Editing Task #<%= @task.id %>")
+// changes the body
+$('.modal-body').html(html);
+// pops it up
+$('.btn-primary').show()
+$('.modal').modal();

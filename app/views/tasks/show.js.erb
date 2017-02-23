@@ -1,0 +1,5 @@
+var html = "<%= j render @task %>";
+$('.modal-title').text('Task')
+$('.modal-body').html(html);
+$('.btn-primary').hide()
+$('.modal').modal();
